@@ -26,17 +26,17 @@ d = (b)**2 - 4 * (a) * (c)
 puts "Дискриминант =#{d}"
 
 if
-  d < 0
-  puts "Корней нет"
-elsif
   d > 0
   x1 = ((-b) + (Math.sqrt (d)))/(2 * a)
   x2 = ((-b) - (Math.sqrt (d)))/(2 * a)
   puts "Дискриминант =#{d} имеет 2 корня #{x1.to_i} и #{x2.to_i}"
-else
+
+elsif
   d == 0
   x1 = ((-b) + (Math.sqrt (d)))/(2 * a)
   puts "Дискриминант =#{d} имеет 1 корень #{x1.to_i}"
+else
+    puts "Корней нет"
 end
 
 
