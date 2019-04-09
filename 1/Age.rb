@@ -1,4 +1,5 @@
-﻿# Определение кодировки ввода с клавиатуры. Для корректного использования chomp в Windows
+﻿#тест git
+# Определение кодировки ввода с клавиатуры. Для корректного использования chomp в Windows
 if (Gem.win_platform?)
 Encoding.default_external = Encoding.find(Encoding.locale_charmap)
 Encoding.default_internal = __ENCODING__
@@ -12,4 +13,5 @@ name = gets.chomp.capitalize.to_s
 puts "В каком году ты родился?"
 year = gets.chomp
 puts "#{name}, привет! Тебе примерно #{2018 - year.to_i} лет."
+
 
