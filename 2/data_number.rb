@@ -6,7 +6,7 @@ number = gets.chomp.to_i
 puts 'Введите месяц'
 month  = gets.chomp.to_i
 
-unless number >= 1 && number <= months_day[month]
+unless number >= 1 && number <= months_day[month-1]
   puts 'введите корректный день в месяце'
   exit
 end
@@ -32,9 +32,15 @@ months_day[1] = 29 if leap
 
 day_count = 0
 x = 0
-while x < month - 1
+
+if month == 1
+  day_count = number
+  else
+  while x <= month - 2
   day_count += months_day[x]
   x += 1
+  end
+  day_count+=number
 end
 
 puts "Количество дней от начала года #{day_count}"
