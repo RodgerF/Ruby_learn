@@ -1,12 +1,17 @@
-puts "What's your first name? "
-first_name = gets.chomp.capitalize!
-puts first_name
-puts "What's your last name? "
-last_name = gets.chomp.capitalize!
-puts last_name
-puts "What's your city? "
-city = gets.chomp.capitalize!
-puts city
-puts "What's your state? "
-state = gets.chomp.upcase
-puts state
+def st2x(n)
+x = 1
+  while 2**x < n+1
+    x += 1
+  end
+return x
+end
+
+puts st2x(7)
+
+
+
+def st2x(n)
+(Math.log2(n)+1).to_i
+end
+
+puts st2x(5)
