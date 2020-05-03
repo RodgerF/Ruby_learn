@@ -22,5 +22,6 @@ months.each do |month, days|
 
 end
 
+puts '---------------------------------'
 
 months.each { |month, days| puts month if days == 30 }
